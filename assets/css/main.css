@@ -1,3 +1,39 @@
+/* Dark theme */
+:root {
+	--bg: #1e1e2e; /* Black 2 */
+	--bg-accent: #161320; /* Black 0 */
+	--text: #d9e0ee; /* White */
+}
+
+html {
+	color: var(--text);
+	background: var(--bg);
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.left-col {
+	margin: auto;
+}
+
+.pfetch {
+	background: var(--bg-accent);
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+.terminal {
+	margin: 0;
+}
+
+.pfetch-row {
+	display: flex;
+	flex-direction: row;
+}
+
 .img-me {
-	height: 200px;
+	height: 125px;
 }
