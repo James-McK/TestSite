@@ -26,6 +26,18 @@ main {
 	height: 86vh; /* Not the happiest with this */
 }
 
+#page-bg {
+	opacity: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: url(./assets/images/background.webp) no-repeat center center fixed;
+	background-size: cover;
+	z-index: -1;
+}
+
 #left-col {
 	margin: auto;
 	display: flex;
@@ -111,5 +123,14 @@ nav a#nav-current {
 
 	nav a {
 		padding: 0.05rem 0.2rem;
+	}
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
