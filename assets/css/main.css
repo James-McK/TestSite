@@ -173,6 +173,11 @@ nav a#nav-current {
 	#pfetch {
 		font-size: 1rem;
 	}
+
+	#img-me {
+		width: 9rem;
+		height: 9rem;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -183,12 +188,21 @@ nav a#nav-current {
 }
 
 @media only screen and (max-width: 950px) {
-	#left-col {
-		grid-column: 1;
+	main {
+		grid-template-columns: 1fr;
 	}
 
-	#right-col {
-		grid-column: 1;
+	#right-content {
+		width: 90%;
+	}
+
+	#pfetch {
+		font-size: 0.9rem;
+	}
+
+	#img-me {
+		width: 8rem;
+		height: 8rem;
 	}
 }
 
