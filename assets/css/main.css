@@ -112,6 +112,11 @@ img {
 	border-radius: 0.4rem;
 }
 
+#caret {
+	animation: caretToggle 1.5s infinite;
+	opacity: 1;
+}
+
 #right-col {
 	margin: auto;
 	display: flex;
@@ -223,5 +228,20 @@ nav a#nav-current {
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes caretToggle {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
 	}
 }
