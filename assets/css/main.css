@@ -145,6 +145,7 @@ nav {
 	margin: auto;
 	margin-top: -0.8rem;
 	border-radius: 0.4rem;
+	text-align: center;
 }
 
 nav a,
@@ -203,11 +204,17 @@ nav a#nav-current {
 
 	#pfetch {
 		font-size: 0.9rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	#img-me {
 		width: 8rem;
 		height: 8rem;
+	}
+
+	#right-content {
+		margin-bottom: 1rem;
 	}
 }
 
