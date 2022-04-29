@@ -43,6 +43,18 @@ a:focus {
 	color: var(--accent);
 }
 
+#pfetch a,
+#pfetch a:visited {
+	color: var(--accent-2);
+	text-decoration: none;
+}
+
+#pfetch a:hover,
+#pfetch a:focus {
+	text-decoration: underline;
+	color: var(--accent);
+}
+
 main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
