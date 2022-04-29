@@ -3,6 +3,7 @@
 	--bg: #1e1e2e; /* Black 2 */
 	--bg-accent: #161320; /* Black 0 */
 	--text: #d9e0ee; /* White */
+	--accent: #ddb6f2; /* Mauve */
 }
 
 html {
@@ -10,10 +11,18 @@ html {
 	background: var(--bg);
 }
 
+body {
+	margin: 0;
+}
+
+h2 {
+	margin-top: 0;
+}
+
 main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	height: 88vh;
+	height: 86vh; /* Not the happiest with this */
 }
 
 #left-col {
@@ -23,7 +32,7 @@ main {
 	justify-content: center;
 	position: relative;
 	width: 100%;
-	height: 100%; /* Not the happiest with this */
+	height: 100%;
 }
 
 #pfetch {
@@ -45,6 +54,7 @@ main {
 	height: 10rem;
 	margin-right: 1rem;
 	margin-left: 0;
+	border-radius: 0.4rem;
 }
 
 #right-col {
@@ -52,10 +62,54 @@ main {
 	display: flex;
 	align-items: center;
 	position: relative;
-	height: 100%; /* Not the happiest with this */
+	height: 100%;
 	width: 100%;
 }
 
 #right-content {
 	width: 60%;
+}
+
+/* Format navigation */
+header {
+	display: flex;
+}
+
+nav {
+	font-size: 1rem;
+	line-height: 2;
+	padding: 1rem 0 0 0;
+	background: var(--bg);
+	display: inline-block;
+	border: 1px solid var(--accent);
+	margin: auto;
+	margin-top: -10px;
+	border-radius: 5px;
+}
+
+nav a,
+nav a:visited {
+	margin: 0 0.5rem 0.6rem 0.5rem;
+	color: var(--text);
+	display: inline-block;
+	padding: 0.1rem 1rem;
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a#nav-current {
+	border-color: var(--accent);
+	color: var(--accent) !important;
+	text-decoration: underline;
+}
+
+/* Reduce nav size on mobile */
+@media only screen and (max-width: 750px) {
+	body > header p {
+		margin: 0rem auto;
+	}
+
+	nav a {
+		padding: 0.05rem 0.2rem;
+	}
 }
