@@ -11,10 +11,12 @@ html {
 	color: var(--text);
 	background: var(--bg);
 	font-family: sans-serif;
+	background-size: cover;
 }
 
 body {
 	margin: 0;
+	height: 90vh;
 }
 
 h2 {
@@ -23,7 +25,7 @@ h2 {
 
 p {
 	margin: 0;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	line-height: 1.25;
 }
 
@@ -42,7 +44,12 @@ a:focus {
 main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	height: 86vh; /* Not the happiest with this */
+	height: 100%;
+}
+
+footer p {
+	font-size: 0.8rem;
+	text-align: center;
 }
 
 #page-bg {
@@ -55,6 +62,7 @@ main {
 	background: url(../imgs/background.webp) no-repeat center center fixed;
 	background-size: cover;
 	z-index: -1;
+	overflow: hidden;
 
 	animation: fadeInAnimation ease 0.25s;
 	animation-iteration-count: 1;
@@ -83,6 +91,7 @@ img {
 	padding: 1rem;
 	border: 2px solid var(--bg-accent);
 	border-radius: 0.5rem;
+	font-size: 1.1rem;
 }
 
 .terminal {
@@ -92,6 +101,8 @@ img {
 #pfetch-row {
 	display: flex;
 	flex-direction: row;
+	margin: 1rem;
+	margin-left: 0;
 }
 
 #img-me {
@@ -111,7 +122,7 @@ img {
 }
 
 #right-content {
-	width: 60%;
+	width: 75%;
 }
 
 /* Format navigation */
