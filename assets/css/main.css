@@ -159,13 +159,36 @@ nav a#nav-current {
 }
 
 /* Reduce nav size on mobile */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 580px) {
 	body > header p {
 		margin: 0rem auto;
 	}
 
 	nav a {
 		padding: 0.05rem 0.2rem;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	#pfetch {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	#right-content {
+		margin: auto;
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	#left-col {
+		grid-column: 1;
+	}
+
+	#right-col {
+		grid-column: 1;
 	}
 }
 
