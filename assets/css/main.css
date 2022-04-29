@@ -206,6 +206,17 @@ nav a#nav-current {
 	}
 }
 
+@media only screen and (max-width: 500px) {
+	#pfetch {
+		font-size: 0.7rem;
+	}
+
+	#img-me {
+		width: 6rem;
+		height: 6rem;
+	}
+}
+
 @keyframes fadeInAnimation {
 	0% {
 		opacity: 0;
