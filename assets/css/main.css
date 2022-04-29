@@ -16,7 +16,6 @@ html {
 
 body {
 	margin: 0;
-	height: 90vh;
 }
 
 h2 {
@@ -43,6 +42,10 @@ a:focus {
 	color: var(--accent);
 }
 
+#not-footer {
+	min-height: 100vh;
+}
+
 #fetch a,
 #fetch a:visited {
 	color: var(--accent-2);
@@ -59,6 +62,7 @@ main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	height: 100%;
+	margin-top: 7rem;
 }
 
 footer p {
@@ -144,6 +148,11 @@ img {
 	width: 75%;
 }
 
+footer {
+	margin: 1rem 0 0.4rem 0;
+	text-align: center;
+}
+
 /* Format navigation */
 header {
 	display: flex;
@@ -210,6 +219,7 @@ nav a#nav-current {
 @media only screen and (max-width: 950px) {
 	main {
 		grid-template-columns: 1fr;
+		margin-top: 0;
 	}
 
 	#right-content {

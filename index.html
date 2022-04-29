@@ -16,62 +16,72 @@
 
 	<body>
 		<div id="page-bg"></div>
+		<div id="not-footer">
+			<header>
+				<nav>
+					<a href="./" id="nav-current">~/</a>
+					<a href="./blog">~/blog</a>
+					<a href="./projects">~/projects</a>
+					<a href="./contact">~/contact</a>
+					<a href="./other">~/other</a>
+				</nav>
+			</header>
 
-		<header>
-			<nav>
-				<a href="./" id="nav-current">~/</a>
-				<a href="./blog">~/blog</a>
-				<a href="./projects">~/projects</a>
-				<a href="./contact">~/contact</a>
-				<a href="./other">~/other</a>
-			</nav>
-		</header>
-
-		<main>
-			<div id="left-col">
-				<div id="fetch">
-					<pre class="terminal">[james@mck]$ fetch</pre>
-					<div id="fetch-row">
-						<img src="./assets/imgs/me.webp" id="img-me" alt="A photo of me wearing a red fleece and cyling helmet, standing in front of a foggy sunset" />
-						<pre class="terminal">
+			<main>
+				<div id="left-col">
+					<div id="fetch">
+						<pre class="terminal">[james@mck]$ fetch</pre>
+						<div id="fetch-row">
+							<img src="./assets/imgs/me.webp" id="img-me" alt="A photo of me wearing a red fleece and cyling helmet, standing in front of a foggy sunset" />
+							<pre class="terminal">
 James
 ----------------------------------
 email:     <a href="mailto:contact%40mck.is">james at mck.is</a>
 code:      <a href="https://github.com/james-mck" rel="noopener" target="_blank">github.com/james-mck</a>
 mastodon:  <a href="https://fosstodon.org/@JamesMcK" rel="me noopener" target="_blank">@jamesmck@fosstodon.org</a>
 matrix:    <a href="https://matrix.to/#/@jmck:matrix.org" rel="noopener" target="blank">@jmck:matrix.org</a></pre>
+						</div>
+						<pre class="terminal">[james@mck]$ <span id="caret">_</span></pre>
 					</div>
-					<pre class="terminal">[james@mck]$ <span id="caret">_</span></pre>
 				</div>
-			</div>
 
-			<div id="right-col">
-				<div id="right-content">
-					<h2>About</h2>
-					<p>
-						Hey! 👋<br />
-						I'm James, and thanks for visiting my website! I'm still not entirely sure what I want it to be, so it'll be inconsistant and change often until then.<br />
-						I'm a Computer Science student in my first year at university, which takes up most of my time. However, I'm still occasionally finding time to make things and put them online.<br />
-						<br />
-						While you're here, you can look at <a href="./projects">some projects</a> I've worked on, read some of my <a href="./blog">blog posts</a> (whenever I get around to writing more of them, anyway) and <a href="/contact">contact me</a>.
-						<br />
-						<br />
-						<br />
-					</p>
+				<div id="right-col">
+					<div id="right-content">
+						<h2>About</h2>
+						<p>
+							Hey! 👋<br />
+							I'm James, and thanks for visiting my website! I'm still not entirely sure what I want it to be, so it'll be inconsistant and change often until then.<br />
+							I'm a Computer Science student in my first year at university, which takes up most of my time. However, I'm still occasionally finding time to make things and put them online.<br />
+							<br />
+							While you're here, you can look at <a href="./projects">some projects</a> I've worked on, read some of my <a href="./blog">blog posts</a> (whenever I get around to writing more of them, anyway) and <a href="/contact">contact me</a>.
+							<br />
+							<br />
+							<br />
+						</p>
 
-					<h2>Projects</h2>
-					<p>
-						<a href="https://github.com/James-McK/CSC1028">URL Understander</a> (For one of my uni modules)<br />
-						<a href="https://mck.is/2048/">A 2048 clone</a> that allows you to play on any sized grid, among other features<br />
-						<a href="https://github.com/James-McK/A2-Project">A2-Project</a><br />
-						<a href="https://github.com/James-McK/PlanetPhysics">Solar system simulation</a><br />
-						<a href="https://github.com/James-McK/RTWeekend">CPU based raytracer</a><br />
-						<a href="https://github.com/James-McK/ParticleSim">Particle/powder simulator</a><br />
-						<a href="https://github.com/James-McK/james-mck.github.io">This website</a><br />
-						+ whatever else I'm currently working on now!<br />
-					</p>
+						<h2>Projects</h2>
+						<p>
+							<a href="https://github.com/James-McK/CSC1028" rel="noopener">URL Understander</a> (For one of my uni modules)<br />
+							<a href="https://mck.is/2048/" rel="noopener">A 2048 clone</a> that allows you to play on any sized grid, among other features<br />
+							<a href="https://github.com/James-McK/A2-Project" rel="noopener">A2-Project</a><br />
+							<a href="https://github.com/James-McK/PlanetPhysics" rel="noopener">Solar system simulation</a><br />
+							<a href="https://github.com/James-McK/RTWeekend" rel="noopener">CPU based raytracer</a><br />
+							<a href="https://github.com/James-McK/ParticleSim" rel="noopener">Particle/powder simulator</a><br />
+							<a href="https://github.com/James-McK/james-mck.github.io" rel="noopener">This website</a><br />
+							+ whatever else I'm currently working on now!<br />
+						</p>
+					</div>
 				</div>
-			</div>
-		</main>
+			</main>
+		</div>
+
+		<footer>
+			<p>
+				Website source available on <a href="https://github.com/james-mck/james-mck.github.io" rel="noopener" target="_blank">github</a><br />
+				Made by hand with ❤.<br />
+				<br />
+				<a href="https://512kb.club" rel="noopener"><img src="./assets/imgs/green-team.svg" alt="Green team member of the 512kb club" /></a>
+			</p>
+		</footer>
 	</body>
 </html>
